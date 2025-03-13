@@ -1,5 +1,6 @@
-import Pages from './MainPage'
-import mainPage from './MainPage'
+//import Pages from './mainPage_1'
+
+  import MainPages from './mainPage_1'
 //import './App.css'
 
 function App() {
@@ -7,7 +8,7 @@ function App() {
 
   return (
     <>
-      <Pages/>
+            <MainPages/>
     </>
   )
 }
