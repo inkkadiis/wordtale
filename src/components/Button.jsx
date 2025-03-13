@@ -6,8 +6,8 @@ const colors = {
 };
 
 const type = {
-  big: "w-full flex justify-center",
-  small: "inline-flex justify-center",
+  full: "w-full flex justify-center rounded-[22px] px-8 py-4",
+  fit: "inline-flex justify-center rounded-[15px] px-6 py-2",
 };
 
 // 내용물, 색, 함수 순으로 넣는다(안넣어도 됨)
@@ -15,7 +15,7 @@ export default function Button({ children, color, size, onClick }) {
   return (
     <button
       type="button"
-      className={`${type[size]} rounded-md px-4 py-1.5 font-bold ${colors[color]}`}
+      className={`${type[size]} ${colors[color]}`}
       onClick={onClick}
     >
       {children}

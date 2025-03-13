@@ -8,14 +8,16 @@ function App() {
   return (
     <>
       <div>
-        <Button color="point" size="big">
+        <Button color="point" size="full">
           point big Button
         </Button>
-        <Button color="outlinePoint" size="small">
+        <Button color="outlinePoint" size="fit">
           outline Point small Button
         </Button>
-        <Button color="sub">sub small Button</Button>
-        <Button color="oulineSub" size="big">
+        <Button color="sub" size="fit">
+          sub small Button
+        </Button>
+        <Button color="oulineSub" size="full">
           outline Sub Big Button
         </Button>
       </div>
