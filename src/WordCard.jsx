@@ -1,7 +1,7 @@
 import WandIcon from "./components/WandIcon";
 import Icnbookmark from "./components/Icnbookmark";
 
-function MainPages() {
+function WordCard() {
   return (
     <div className="Wordshortdef w-full max-w-md h-auto bg-[#fdf8f0] p-6 md:p-6 lg:p-8">
       <div className="Contetnword w-full md:w-96 mx-auto relative flex flex-col justify-start items-center gap-6">
@@ -65,4 +65,4 @@ function MainPages() {
   );
 }
 
-export default MainPages;
+export default WordCard;

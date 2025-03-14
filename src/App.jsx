@@ -1,5 +1,5 @@
 import "./App.css";
-import MainPages from "./mainPage_1";
+import WordCard from "./WordCard";
 import Button from "./components/Button";
 
 function App() {
@@ -22,7 +22,7 @@ function App() {
           </Button>
           */}
         </div>
-        <MainPages />
+        <WordCard />
       </div>
     </>
   );
