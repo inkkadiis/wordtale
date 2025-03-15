@@ -20,6 +20,8 @@
   html {
     background-color: var(--color-main);
     color: var(--color-base-black);
+    overflow: hidden;
+    overscroll-behavior: none;
   }
 
   body {

@@ -1,15 +1,10 @@
 import "./App.css";
-import WordCard from "./WordCard";
-import Button from "./components/Button";
-import Novel from "./Novel";
-import Slide from "./Slide";
-import Indicator from "./components/Indicator";
-import Nav from "./components/Nav";
+import WordDef from "./WordDef";
 
 function App() {
   return (
     <>
-      <div className="w-screen flex flex-col items-center  h-full bg-main gap-6">
+      <div className="p-6 md:p-6 lg:p-8 w-screen flex flex-col items-center h-full bg-main gap-6">
         <div>
           {/*
           <Button color="point" size="full">
@@ -27,9 +22,7 @@ function App() {
           */}
         </div>
 
-        <Slide />
-        <Indicator />
-        <Nav />
+        <WordDef />
       </div>
     </>
   );
