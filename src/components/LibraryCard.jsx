@@ -1,10 +1,14 @@
 import { Right, Trash } from "./Icon";
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 
-export default function LibraryCard() {
+export default function LibraryCard({ title, description, resetTrigger }) {
   const [isRevealed, setIsRevealed] = useState(false);
   const touchStartX = useRef(0);
   const touchEndX = useRef(0);
+
+  useEffect(() => {
+    setIsRevealed(false);
+  }, [resetTrigger]);
 
   const handleTouchStart = (e) => {
     touchStartX.current = e.touches[0].clientX;
@@ -26,20 +30,20 @@ export default function LibraryCard() {
 
   return (
     <div
-      className="relative flex" // 부모 요소를 flex로 설정
+      className="relative flex"
       onTouchStart={handleTouchStart}
       onTouchMove={handleTouchMove}
       onTouchEnd={handleTouchEnd}
     >
       {/* 메인 콘텐츠 (슬라이드 시 왼쪽으로 이동) */}
       <div
-        className={`flex justify-between gap-6 rounded bg-white px-3 py-2 shadow-md transition-transform duration-300 z-10
+        className={`flex justify-between gap-6 rounded bg-white px-3 py-2 transition-transform duration-300 z-10
         ${isRevealed ? `-translate-x-[50px]` : "translate-x-0"}
      `}
       >
-        <div className="flex-1 max-w-56">
-          <h2 className="text-point">Apple</h2>
-          <p>To leave something behind or give up completely</p>
+        <div className="flex-1">
+          <h2 className="text-point">{title}</h2>
+          <p>{description}</p>
         </div>
         <button type="button">
           <Right />

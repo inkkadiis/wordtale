@@ -1,12 +1,13 @@
 import "./App.css";
-import LibraryCard from "./components/LibraryCard";
+import WordDef from "./pages/WordDef";
+import AppRoutes from "./routes";
 
 function App() {
   return (
     <>
       <div className="p-6 md:p-6 lg:p-8 w-screen flex flex-col items-center h-full bg-main gap-6">
-        <div>
-          {/*
+        <AppRoutes />
+        {/*
           <Button color="point" size="full">
             point big Button
           </Button>
@@ -20,12 +21,8 @@ function App() {
             outline Sub Big Button
           </Button>
           */}
-        </div>
-
-        <WordDef />
       </div>
     </>
   );
 }
-
 export default App;

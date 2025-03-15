@@ -1,6 +1,8 @@
-function Novel() {
+import WordPageContainer from "./WordPageContainer";
+
+function WordNovel() {
   return (
-    <div className="relative min-w-full bg-white rounded-tr-3xl rounded-br-3xl p-2">
+    <WordPageContainer>
       <div className="bg-white border-borderColor border-r-4 border-t-4 border-b-4 rounded-tr-3xl rounded-br-3xl p-9">
         {/* ✅ y auto , view all  */}
         <div className="h-96 overflow-y-auto">
@@ -23,8 +25,8 @@ function Novel() {
           </div>
         </div>
       </div>
-    </div>
+    </WordPageContainer>
   );
 }
 
-export default Novel;
+export default WordNovel;

@@ -41,6 +41,10 @@
     font-weight: 600;
     @apply text-xl;
   }
+
+  .font__outfit {
+    font-family: "Outfit", sans-serif;
+  }
 }
 
 .nav-shadow {

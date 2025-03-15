@@ -1,7 +1,7 @@
-import WordCard from "./WordCard";
-import Novel from "./Novel";
-import Indicator from "./components/Indicator";
-import Nav from "./components/Nav";
+import WordCard from "../components/WordCard";
+import WordNovel from "../components/WordNovel";
+import Indicator from "../components/Indicator";
+import Nav from "../components/Nav";
 import { useState, useRef } from "react";
 
 function WordDef() {
@@ -45,7 +45,7 @@ function WordDef() {
             <WordCard />
           </div>
           <div className="min-w-full px-3">
-            <Novel />
+            <WordNovel />
           </div>
         </div>
       </div>
