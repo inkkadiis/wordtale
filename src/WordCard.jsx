@@ -1,68 +1,89 @@
 import WandIcon from "./components/WandIcon";
 import Icnbookmark from "./components/Icnbookmark";
 
-function WordCard() {
+export default function WordCard() {
   return (
-    <div className="Wordshortdef w-full max-w-md h-auto bg-[#fdf8f0] p-6 md:p-6 lg:p-8">
-      <div className="Contetnword w-full md:w-96 mx-auto relative flex flex-col justify-start items-center gap-6">
-        <div className="Wordbook w-full h-auto bg-white rounded-tl-3xl rounded-bl-3xl shadow-xl border border-[#f4f1eb] p-9 ">
-          <div className="Wordcontents w-full md:w-80 mx-auto flex flex-col gap-9">
-            <div className="Wordwithpronoun w-full flex flex-h md:flex-row md:items-center gap-2">
-              <div className="text-black text-4xl md:text-5xl font-bold">
-                Left
-              </div>
-              <div className="text-[#a03c06] text-lg md:text-xl font-medium tracking-tight">
-                /left/
-              </div>
-            </div>
-
-            <div className="Deflist flex flex-col gap-8">
-              {[
-                {
-                  number: "1.",
-                  type: "ADJECTIVE",
-                  definition:
-                    "on, toward, or relating to the side of a human body or of a thing that is to the west when the person or thing is facing north.",
-                },
-                {
-                  number: "2.",
-                  type: "ADJECTIVE",
-                  definition:
-                    "relating to or denoting a person or group favoring left-wing views; progressive.",
-                },
-                {
-                  number: "3.",
-                  type: "NOUN",
-                  definition: "the left-hand part, side, or direction.",
-                },
-              ].map((item, index) => (
-                <div
-                  key={index}
-                  className="Deflistcontent flex flex-h md:flex-row items-center gap-6"
-                >
-                  <div className="flex-1 flex flex-col gap-1">
-                    <div className="flex items-center gap-1">
-                      <div className="text-black text-base font-normal">
-                        {item.number}
-                      </div>
-                      <div className="text-[#ff8340] text-base font-semibold uppercase">
-                        {item.type}
-                      </div>
-                    </div>
-                    <div className="text-black text-base font-normal leading-snug">
-                      {item.definition}
-                    </div>
-                  </div>
-                  <WandIcon />
-                </div>
-              ))}
+    <div className="relative min-w-full bg-white rounded-tl-3xl rounded-bl-3xl p-2 shadow-xl">
+      <div className="h-[30rem] bg-white border-borderColor border-l-4 border-t-4 border-b-4 rounded-tl-3xl rounded-bl-3xl p-9 flex flex-col gap-9">
+        {/* Word + Pronunciation */}
+        <div className="w-full flex items-baseline md:flex-row gap-2">
+          <h1 className="text-black text-4xl md:text-5xl font-bold">Left</h1>
+          <div className="flex flex-col">
+            <div className="text-point text-lg md:text-xl font-medium tracking-tight">
+              /left/
             </div>
           </div>
-          <Icnbookmark />
         </div>
+        {/* ✅ 단어 부분만 hidden 적용, View all은 제외 */}
+        <div className="h-full overflow-hidden flex-1">
+          <div className="h-full overflow-y-auto">
+            <div className="flex flex-col gap-10">
+              {/* Definitions (스크롤 적용) */}
+              <div className="flex flex-col gap-8">
+                {[
+                  {
+                    number: "1.",
+                    type: "ADJECTIVE",
+                    definition:
+                      "on, toward, or relating to the side of a human body or of a thing that is to the west when the person or thing is facing north.",
+                  },
+                  {
+                    number: "2.",
+                    type: "ADJECTIVE",
+                    definition:
+                      "relating to or denoting a person or group favoring left-wing views; progressive.",
+                  },
+                  {
+                    number: "3.",
+                    type: "NOUN",
+                    definition: "the left-hand part, side, or direction.",
+                  },
+                  {
+                    number: "4.",
+                    type: "VERB",
+                    definition: "past tense of leave.",
+                  },
+                  {
+                    number: "5.",
+                    type: "EXTRA",
+                    definition: "additional example to test scrolling.",
+                  },
+                ].map((item, index) => (
+                  <div
+                    key={index}
+                    className="Deflistcontent flex md:flex-row items-center gap-6"
+                  >
+                    <div className="flex-1 flex flex-col gap-1">
+                      <div className="flex items-center gap-1">
+                        <div className="text-black text-base font-normal">
+                          {item.number}
+                        </div>
+                        <h3 className="text-point text-base font-semibold uppercase">
+                          {item.type}
+                        </h3>
+                      </div>
+                      <div className="text-black text-base font-normal leading-snug">
+                        {item.definition}
+                      </div>
+                    </div>
+                    <WandIcon />
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* ✅ `View all`은 hidden 적용 X */}
+        <div className="flex justify-center mt-3">
+          <h6 className="text-point">View all</h6>
+        </div>
+      </div>
+
+      {/* Bookmark 아이콘 유지 */}
+      <div className="absolute top-0 right-0 -translate-y-1/2">
+        <Icnbookmark />
       </div>
     </div>
   );
 }
-
-export default WordCard;

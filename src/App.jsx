@@ -1,13 +1,10 @@
 import "./App.css";
-import WordCard from "./WordCard";
-import Button from "./components/Button";
 import LibraryCard from "./components/LibraryCard";
 
 function App() {
   return (
     <>
-      <div className="w-screen flex flex-col items-center justify-center h-full bg-[#FDF9F0]">
-        <LibraryCard />
+      <div className="p-6 md:p-6 lg:p-8 w-screen flex flex-col items-center h-full bg-main gap-6">
         <div>
           {/*
           <Button color="point" size="full">
@@ -24,7 +21,8 @@ function App() {
           </Button>
           */}
         </div>
-        <WordCard />
+
+        <WordDef />
       </div>
     </>
   );

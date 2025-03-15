@@ -11,12 +11,17 @@
   --color-base-black: #212121;
   --color-base-gray: #888277;
   --color-bright: #fffaf0;
+  --color-borderColor: #f4f1eb;
+  --color-off-gray: #d9d9d9;
+  --color-lineColor: #f4f1eb;
 }
 
 @layer components {
   html {
     background-color: var(--color-main);
     color: var(--color-base-black);
+    overflow: hidden;
+    overscroll-behavior: none;
   }
 
   body {
@@ -38,10 +43,8 @@
   }
 }
 
-.bookMark-shadow {
-  box-shadow: 0px 5px 11px 0px rgba(147, 145, 133, 0.1),
-    0px 10px 20px 0px rgba(147, 145, 133, 0.09),
-    0px 10px 10px 0px rgba(147, 145, 133, 0.02),
-    0px 10px 10px 0px rgba(147, 145, 133, 0.01),
-    0px 10px 20px 0px rgba(147, 145, 133, 0);
+.nav-shadow {
+  box-shadow: -22px 78px 32px 0px rgba(147, 145, 133, 0.01),
+    -34px 121px 35px 0px rgba(147, 145, 133, 0),
+    0px 2px 12px 0px rgba(204, 197, 194, 1);
 }

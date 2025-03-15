@@ -1,6 +1,6 @@
 export default function Icnbookmark() {
   return (
-    <div className="Icnbookmark w-14 h-28 absolute top-[-4px] right-4 bg-transparent drop-shadow-md">
+    <div className="Icnbookmark w-14 h-28 absolute top-[-4px] right-[calc(var(--spacing)*10)] bg-transparent drop-shadow-md">
       <svg
         width="60"
         height="119"
