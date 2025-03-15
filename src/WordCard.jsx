@@ -8,11 +8,13 @@ function WordCard() {
         <div className="Wordbook w-full h-auto bg-white rounded-tl-3xl rounded-bl-3xl shadow-xl border border-[#f4f1eb] p-9 ">
           <div className="Wordcontents w-full md:w-80 mx-auto flex flex-col gap-9">
             <div className="Wordwithpronoun w-full flex flex-h md:flex-row md:items-center gap-2">
-              <div className="text-black text-4xl md:text-5xl font-bold">
+              <h1 className="text-black text-4xl md:text-5xl font-bold">
                 Left
-              </div>
-              <div className="text-[#a03c06] text-lg md:text-xl font-medium tracking-tight">
-                /left/
+              </h1>
+              <div className="flex flex-col">
+                <div className="text-[#a03c06] text-lg md:text-xl font-medium tracking-tight">
+                  /left/
+                </div>
               </div>
             </div>
 
