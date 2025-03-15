@@ -45,7 +45,7 @@ function WordCard() {
               ].map((item, index) => (
                 <div
                   key={index}
-                  className="Deflistcontent flex flex-col md:flex-row items-center gap-6"
+                  className="Deflistcontent flex md:flex-row items-center gap-6"
                 >
                   <div className="flex-1 flex flex-col gap-1">
                     <div className="flex items-center gap-1">
