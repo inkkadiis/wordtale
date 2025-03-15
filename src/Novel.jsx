@@ -1,7 +1,10 @@
 function Novel() {
   return (
-    <div className="w-full max-w-md bg-white rounded-tr-3xl rounded-br-3xl shadow-xl border border-borderColor p-6">
-      <div className="w-full flex flex-col gap-6">
+    <div className="w-full max-w-md bg-white rounded-tr-3xl rounded-br-3xl shadow-xl border border-borderColor p-2">
+      <div
+        className="w-full flex flex-col gap-6 rounded-tr-3xl rounded-br-3xl 
+                        border-r-4 border-t-4 border-b-4 border-[#f4f1eb] p-9"
+      >
         <div className="px-[5px] bg-black rounded-full flex justify-center items-center w-6 h-6">
           <span className="text-white text-xs font-normal">1</span>
         </div>

@@ -5,8 +5,11 @@ function WordCard() {
   return (
     <div className="Wordshortdef w-full max-w-md h-auto bg-m p-6 md:p-6 lg:p-8">
       <div className="Contetnword w-full mx-auto relative flex flex-col justify-start items-center gap-6">
-        <div className="Wordbook w-full h-auto bg-white rounded-tl-3xl rounded-bl-3xl shadow-xl  p-9">
-          <div className="Wordcontents w-full mx-auto flex flex-col gap-9">
+        <div className="Wordbook w-full h-auto bg-white rounded-tl-3xl rounded-bl-3xl shadow-xl  p-2">
+          <div
+            className="Wordcontents w-full mx-auto flex flex-col rounded-tl-3xl rounded-bl-3xl  
+                        border-l-4 border-t-4 border-b-4 border-[#f4f1eb] gap-9 p-9"
+          >
             {/* Word + Pronunciation */}
             <div className="Wordwithpronoun w-full flex items-baseline md:flex-row gap-2">
               <h1 className="text-black text-4xl md:text-5xl font-bold">
