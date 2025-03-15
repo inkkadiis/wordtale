@@ -7,7 +7,7 @@ function WordCard() {
       <div className="Contetnword w-full md:w-96 mx-auto relative flex flex-col justify-start items-center gap-6">
         <div className="Wordbook w-full h-auto bg-white rounded-tl-3xl rounded-bl-3xl shadow-xl border border-[#f4f1eb] p-9 ">
           <div className="Wordcontents w-full md:w-80 mx-auto flex flex-col gap-9">
-            <div className="Wordwithpronoun w-full flex flex-h md:flex-row md:items-center gap-2">
+            <div className="Wordwithpronoun w-full flex items-baseline md:flex-row gap-2">
               <h1 className="text-black text-4xl md:text-5xl font-bold">
                 Left
               </h1>
@@ -47,7 +47,7 @@ function WordCard() {
                       <div className="text-black text-base font-normal">
                         {item.number}
                       </div>
-                      <div className="text-[#ff8340] text-base font-semibold uppercase">
+                      <div className="text-point text-base font-semibold uppercase">
                         {item.type}
                       </div>
                     </div>

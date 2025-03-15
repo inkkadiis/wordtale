@@ -33,7 +33,8 @@
   }
 
   h2 {
-    @apply text-xl font-bold;
+    font-weight: 600;
+    @apply text-xl;
   }
 }
 
