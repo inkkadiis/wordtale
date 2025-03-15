@@ -10,7 +10,21 @@ const type = {
   fit: "inline-flex justify-center rounded-[15px] px-6 py-2",
 };
 
-// 내용물, 색, 함수 순으로 넣는다(안넣어도 됨)
+/* Button 사용하는 방법 
+  <Button color="point" size="full">
+    point big Button
+  </Button>
+  <Button color="outlinePoint" size="fit">
+    outline Point small Button
+  </Button>
+  <Button color="sub" size="fit">
+    sub small Button
+  </Button>
+  <Button color="oulineSub" size="full">
+    outline Sub Big Button
+  </Button> 
+*/
+
 export default function Button({ children, color, size, onClick }) {
   return (
     <button
