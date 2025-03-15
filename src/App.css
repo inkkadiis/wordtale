@@ -11,6 +11,7 @@
   --color-base-black: #212121;
   --color-base-gray: #888277;
   --color-bright: #fffaf0;
+  --color-borderColor: #f4f1eb;
 }
 
 @layer components {

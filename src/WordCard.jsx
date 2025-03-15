@@ -3,21 +3,20 @@ import Icnbookmark from "./components/Icnbookmark";
 
 function WordCard() {
   return (
-    <div className="Wordshortdef w-full max-w-md h-auto bg-[#fdf8f0] p-6 md:p-6 lg:p-8">
+    <div className="Wordshortdef w-full max-w-md h-auto bg-m p-6 md:p-6 lg:p-8">
       <div className="Contetnword w-full md:w-96 mx-auto relative flex flex-col justify-start items-center gap-6">
-        <div className="Wordbook w-full h-auto bg-white rounded-tl-3xl rounded-bl-3xl shadow-xl border border-[#f4f1eb] p-9 ">
+        <div className="Wordbook w-full h-auto bg-white rounded-tl-3xl rounded-bl-3xl shadow-xl border border-borderColor p-9 ">
           <div className="Wordcontents w-full md:w-80 mx-auto flex flex-col gap-9">
             <div className="Wordwithpronoun w-full flex items-baseline md:flex-row gap-2">
               <h1 className="text-black text-4xl md:text-5xl font-bold">
                 Left
               </h1>
               <div className="flex flex-col">
-                <div className="text-[#a03c06] text-lg md:text-xl font-medium tracking-tight">
+                <div className="text-point text-lg md:text-xl font-medium tracking-tight">
                   /left/
                 </div>
               </div>
             </div>
-
             <div className="Deflist flex flex-col gap-8">
               {[
                 {
@@ -47,9 +46,9 @@ function WordCard() {
                       <div className="text-black text-base font-normal">
                         {item.number}
                       </div>
-                      <div className="text-point text-base font-semibold uppercase">
+                      <h3 className="text-point text-base font-semibold uppercase">
                         {item.type}
-                      </div>
+                      </h3>
                     </div>
                     <div className="text-black text-base font-normal leading-snug">
                       {item.definition}
@@ -59,6 +58,8 @@ function WordCard() {
                 </div>
               ))}
             </div>
+
+            <div>{/**viwe all div*/}</div>
           </div>
           <Icnbookmark />
         </div>
