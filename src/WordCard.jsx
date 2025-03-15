@@ -4,9 +4,9 @@ import Icnbookmark from "./components/Icnbookmark";
 function WordCard() {
   return (
     <div className="Wordshortdef w-full max-w-md h-auto bg-m p-6 md:p-6 lg:p-8">
-      <div className="Contetnword w-full md:w-96 mx-auto relative flex flex-col justify-start items-center gap-6">
+      <div className="Contetnword w-full md:auto mx-auto relative flex flex-col justify-start items-center gap-6">
         <div className="Wordbook w-full h-auto bg-white rounded-tl-3xl rounded-bl-3xl shadow-xl border border-borderColor p-9 ">
-          <div className="Wordcontents w-full md:w-80 mx-auto flex flex-col gap-9">
+          <div className="Wordcontents w-full md:auto mx-auto flex flex-col gap-9">
             <div className="Wordwithpronoun w-full flex items-baseline md:flex-row gap-2">
               <h1 className="text-black text-4xl md:text-5xl font-bold">
                 Left
