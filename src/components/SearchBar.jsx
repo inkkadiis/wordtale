@@ -8,9 +8,10 @@ export default function SearchBar() {
           type="text"
           className="outline-none focus:ring-0 focus:border-transparent"
           placeholder="test"
-        ></input>
+        />
         <WandIcon />
       </div>
+      <div></div>
     </div>
   );
 }

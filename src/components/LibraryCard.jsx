@@ -37,7 +37,7 @@ export default function LibraryCard({ title, description, resetTrigger }) {
     >
       {/* 메인 콘텐츠 (슬라이드 시 왼쪽으로 이동) */}
       <div
-        className={`flex justify-between gap-6 rounded bg-white px-3 py-2 transition-transform duration-300 z-10
+        className={`flex justify-between gap-6 rounded px-3 py-2 transition-transform duration-300 z-10
         ${isRevealed ? `-translate-x-[50px]` : "translate-x-0"}
      `}
       >

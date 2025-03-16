@@ -1,13 +1,11 @@
 import Icnbookmark from "./Icnbookmark";
 import WandIcon from "./WandIcon";
-import { WordPageContainerLeft } from "./WordPageContainer";
 
 export default function WordCard() {
   return (
-    <WordPageContainerLeft>
-      <div className="h-[30rem] bg-white border-borderColor border-l-4 border-t-4 border-b-4 rounded-tl-3xl rounded-bl-3xl p-9 flex flex-col gap-9">
-        {/* Word + Pronunciation */}
-        <div className="w-full flex items-baseline md:flex-row gap-2">
+    <div className="relative w-full h-full bg-white rounded-tl-3xl rounded-bl-3xl pt-2 pl-2 pb-2 shadow-xl clip-container">
+      <div className="w-full h-full bg-white border-borderColor border-l-4 border-t-4 border-b-4 rounded-tl-3xl rounded-bl-3xl p-9 flex flex-col gap-9 min-h-0">
+        <div className="w-full flex items-baseline gap-2">
           <h1 className="text-black text-4xl md:text-5xl font-bold">Left</h1>
           <div className="flex flex-col">
             <div className="text-point text-lg md:text-xl font-medium tracking-tight">
@@ -15,11 +13,9 @@ export default function WordCard() {
             </div>
           </div>
         </div>
-        {/* ✅ 단어 부분만 hidden 적용, View all은 제외 */}
-        <div className="h-full overflow-hidden flex-1">
-          <div className="h-full overflow-y-auto">
+        <div className="h-full flex-1 overflow-y-auto min-h-0">
+          <div className="h-full overflow-y-auto min-h-0 scroll-fade py-2">
             <div className="flex flex-col gap-10">
-              {/* Definitions (스크롤 적용) */}
               <div className="flex flex-col gap-8">
                 {[
                   {
@@ -74,17 +70,10 @@ export default function WordCard() {
             </div>
           </div>
         </div>
-
-        {/* ✅ `View all`은 hidden 적용 X */}
-        <div className="flex justify-center mt-3">
-          <h6 className="text-point">View all</h6>
-        </div>
       </div>
-
-      {/* Bookmark 아이콘 유지 */}
       <div className="absolute top-0 right-0 -translate-y-1/2">
         <Icnbookmark />
       </div>
-    </WordPageContainerLeft>
+    </div>
   );
 }
