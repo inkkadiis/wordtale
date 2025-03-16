@@ -1,11 +1,12 @@
 export default function WandIcon() {
   return (
-    <div className="w-6 h-6 relative overflow-hidden">
+    <div className="w-6 h-6 relative">
       <div data-svg-wrapper className=" absolute">
         <svg
           width="24"
           height="24"
           viewBox="0 0 24 24"
+          padding="0 0 4 0"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >

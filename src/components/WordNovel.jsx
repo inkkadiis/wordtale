@@ -6,10 +6,10 @@ import {
 function WordNovel() {
   return (
     <WordPageContainerRight>
-      <div className="bg-white border-borderColor border-r-4 border-t-4 border-b-4 rounded-tr-3xl rounded-br-3xl p-9">
+      <div className="h-[30rem] bg-white border-borderColor border-r-4 border-t-4 border-b-4 rounded-tr-3xl rounded-br-3xl p-9">
         {/* ✅ y auto , view all  */}
         <div className="h-96 overflow-y-auto">
-          <div className="flex flex-col gap-9">
+          <div className="flex flex-col gap-9 mr-4">
             <div className="px-[5px] bg-black rounded-full flex justify-center items-center w-6 h-6">
               <span className="text-white text-xs font-normal">1</span>
             </div>
