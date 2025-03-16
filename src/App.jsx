@@ -1,6 +1,6 @@
 import "./App.css";
 import AppRoutes from "./routes";
-import Splash from "./components/Splash";
+import Splash from "./pages/Splash";
 
 function App() {
   return (
