@@ -1,5 +1,4 @@
 export default function Indicator({ index }) {
-  console.log(index);
   return (
     <div className="w-8 inline-flex justify-between items-center">
       <div

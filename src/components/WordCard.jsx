@@ -1,9 +1,6 @@
 import Icnbookmark from "./Icnbookmark";
 import WandIcon from "./WandIcon";
-import {
-  WordPageContainerLeft,
-  WordPageContainerRight,
-} from "./WordPageContainer";
+import { WordPageContainerLeft } from "./WordPageContainer";
 
 export default function WordCard() {
   return (

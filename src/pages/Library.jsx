@@ -10,7 +10,7 @@ export default function Library() {
   const libraryItems = mockLibraryData[selectedLetter] || []; // 선택된 철자에 해당하는 데이터
 
   return (
-    <div className="min-w-full grow rounded-3xl bg-white p-8 shadow-xl">
+    <div className="min-w-md max-w-md grow rounded-3xl bg-white p-8 shadow-xl">
       {/* 철자 선택 버튼 */}
       <div className="grid grid-cols-13 gap-2 py-2">
         {Array.from({ length: 26 }, (_, i) => String.fromCharCode(65 + i)).map(

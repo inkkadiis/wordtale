@@ -1,7 +1,6 @@
 import WordCard from "../components/WordCard";
 import WordNovel from "../components/WordNovel";
 import Indicator from "../components/Indicator";
-import Nav from "../components/Nav";
 import { useState, useRef } from "react";
 
 function WordDef() {
@@ -50,7 +49,6 @@ function WordDef() {
         </div>
       </div>
       <Indicator index={index} />
-      <Nav />
     </div>
   );
 }
