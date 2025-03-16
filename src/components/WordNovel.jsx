@@ -1,8 +1,11 @@
-import WordPageContainer from "./WordPageContainer";
+import {
+  WordPageContainerLeft,
+  WordPageContainerRight,
+} from "./WordPageContainer";
 
 function WordNovel() {
   return (
-    <WordPageContainer>
+    <WordPageContainerRight>
       <div className="bg-white border-borderColor border-r-4 border-t-4 border-b-4 rounded-tr-3xl rounded-br-3xl p-9">
         {/* ✅ y auto , view all  */}
         <div className="h-96 overflow-y-auto">
@@ -25,7 +28,7 @@ function WordNovel() {
           </div>
         </div>
       </div>
-    </WordPageContainer>
+    </WordPageContainerRight>
   );
 }
 

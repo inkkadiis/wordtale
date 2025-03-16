@@ -1,10 +1,13 @@
 import Icnbookmark from "./Icnbookmark";
 import WandIcon from "./WandIcon";
-import WordPageContainer from "./WordPageContainer";
+import {
+  WordPageContainerLeft,
+  WordPageContainerRight,
+} from "./WordPageContainer";
 
 export default function WordCard() {
   return (
-    <WordPageContainer>
+    <WordPageContainerLeft>
       <div className="h-[30rem] bg-white border-borderColor border-l-4 border-t-4 border-b-4 rounded-tl-3xl rounded-bl-3xl p-9 flex flex-col gap-9">
         {/* Word + Pronunciation */}
         <div className="w-full flex items-baseline md:flex-row gap-2">
@@ -85,6 +88,6 @@ export default function WordCard() {
       <div className="absolute top-0 right-0 -translate-y-1/2">
         <Icnbookmark />
       </div>
-    </WordPageContainer>
+    </WordPageContainerLeft>
   );
 }
