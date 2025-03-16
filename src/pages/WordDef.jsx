@@ -1,11 +1,10 @@
 import WordCard from "../components/WordCard";
 import WordNovel from "../components/WordNovel";
 import Indicator from "../components/Indicator";
-import Nav from "../components/Nav";
 import { useState, useRef } from "react";
 
 function WordDef() {
-  const [index, setIndex] = useState(0); // 현재 보여지는 카드 (0: WordCard, 1: Novel)
+  const [index, setIndex] = useState(0);
   const touchStartX = useRef(0);
   const touchEndX = useRef(0);
 
@@ -19,39 +18,41 @@ function WordDef() {
 
   const handleTouchEnd = () => {
     if (touchStartX.current - touchEndX.current > 50) {
-      // 왼쪽으로 스와이프 → 다음 카드(Novel)로 이동
       setIndex(1);
     } else if (touchEndX.current - touchStartX.current > 50) {
-      // 오른쪽으로 스와이프 → 이전 카드(WordCard)로 이동
       setIndex(0);
     }
   };
 
   return (
-    <div className="flex flex-col gap-8 items-center">
-      <div
-        className="overflow-hidden max-w-md px-5 py-8"
-        onTouchStart={handleTouchStart}
-        onTouchMove={handleTouchMove}
-        onTouchEnd={handleTouchEnd}
-      >
+    <>
+      <div className="h-68p flex flex-col gap-8 items-stretch min-h-0">
         <div
-          className={`flex transition-transform duration-300`}
-          style={{
-            transform: `translateX(-${index * 100}%)`, // 0% → WordCard, -100% → Novel
-          }}
+          className="flex-1 min-h-0"
+          onTouchStart={handleTouchStart}
+          onTouchMove={handleTouchMove}
+          onTouchEnd={handleTouchEnd}
         >
-          <div className="min-w-full px-3">
-            <WordCard />
-          </div>
-          <div className="min-w-full px-3">
-            <WordNovel />
+          <div
+            className="h-full items-stretch flex flex-nowrap
+            transition-transform duration-300 min-h-0"
+            style={{
+              transform: `translateX(-${index * 100}%)`,
+            }}
+          >
+            <div className="min-w-full h-full flex min-h-0">
+              <WordCard />
+            </div>
+            <div className="min-w-full h-full flex min-h-0">
+              <WordNovel />
+            </div>
           </div>
         </div>
+        <div className="flex justify-center">
+          <Indicator index={index} />
+        </div>
       </div>
-      <Indicator index={index} />
-      <Nav />
-    </div>
+    </>
   );
 }
 

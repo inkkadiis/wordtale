@@ -1,17 +1,13 @@
-import {
-  WordPageContainerLeft,
-  WordPageContainerRight,
-} from "./WordPageContainer";
-
-function WordNovel() {
+export default function WordNovel() {
   return (
-    <WordPageContainerRight>
-      <div className="h-[30rem] bg-white border-borderColor border-r-4 border-t-4 border-b-4 rounded-tr-3xl rounded-br-3xl p-9">
-        {/* ✅ y auto , view all  */}
-        <div className="h-96 overflow-y-auto">
-          <div className="flex flex-col gap-9 mr-4">
-            <div className="px-[5px] bg-black rounded-full flex justify-center items-center w-6 h-6">
-              <span className="text-white text-xs font-normal">1</span>
+    <div className="relative w-full h-full bg-white rounded-tr-3xl rounded-br-3xl pt-2 pr-2 pb-2 shadow-xl clip-container">
+      <div className="w-full h-full bg-white border-borderColor border-r-4 border-t-4 border-b-4 rounded-tr-3xl rounded-br-3xl p-9">
+        <div className="h-full flex-1 overflow-y-auto min-h-0 scroll-fade pt-3">
+          <div className="flex flex-col gap-5">
+            <div className="bg-black rounded-full flex justify-center items-center w-6 h-6">
+              <span className="font-outfit text-white text-xs font-normal">
+                1
+              </span>
             </div>
             <p className="text-black text-base md:text-lg leading-snug">
               In the quiet town of Ridgeview, nestled amid rolling hills and
@@ -28,8 +24,6 @@ function WordNovel() {
           </div>
         </div>
       </div>
-    </WordPageContainerRight>
+    </div>
   );
 }
-
-export default WordNovel;

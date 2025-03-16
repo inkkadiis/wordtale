@@ -10,9 +10,9 @@ export default function Library() {
   const libraryItems = mockLibraryData[selectedLetter] || []; // 선택된 철자에 해당하는 데이터
 
   return (
-    <div className="min-w-full grow rounded-3xl bg-white p-8 shadow-xl">
+    <div className="h-68p max-w-md grow rounded-3xl bg-white p-8 shadow-xl flex flex-col">
       {/* 철자 선택 버튼 */}
-      <div className="grid grid-cols-13 gap-2 py-2">
+      <div className="grid grid-cols-13 gap-2 py-2 flex-none">
         {Array.from({ length: 26 }, (_, i) => String.fromCharCode(65 + i)).map(
           (letter) => (
             <Letter
@@ -25,7 +25,7 @@ export default function Library() {
           )
         )}
       </div>
-      <div className="h-[30rem] overflow-y-auto flex flex-col gap-3">
+      <div className="flex-1 overflow-y-auto flex flex-col gap-3 min-h-0">
         {libraryItems.length > 0 ? (
           libraryItems.map((item, index) => (
             <>
@@ -39,7 +39,7 @@ export default function Library() {
             </>
           ))
         ) : (
-          <div className="flex flex-col items-center justify-center gap-3 h-full text-gray-500">
+          <div className="h-full flex flex-col items-center justify-center gap-3 text-gray-500">
             <span className="text-6xl text-sub opacity-50 drop-shadow-xl">
               <Bookmark size={36} strokeWidth={2} />
             </span>
