@@ -4,6 +4,8 @@ import WordDef from "../pages/WordDef";
 import Library from "../pages/Library";
 import HomeEmpty from "../pages/HomeEmpty";
 import Nav from "../components/Nav";
+import Splash from "../pages/Splash";
+import WorkThFirst from "../pages/WorkThFirst";
 
 const AppRoutes = () => (
   <BrowserRouter>
@@ -11,9 +13,10 @@ const AppRoutes = () => (
       <Route path="/word" element={<WordDef />} />
       <Route path="/library" element={<Library />} />
       <Route path="/homeEmpty" element={<HomeEmpty />} />
-      {/* <Route path="/splash" element={<Splash />} /> */}
+      {/*<Route path="/splash" element={<Splash />} /> */}
+      <Route path="/workthfirst" element={<WorkThFirst />} />
     </Routes>
-    <Nav />
+    {/*<Nav /> */}
   </BrowserRouter>
 );
 
