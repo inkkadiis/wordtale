@@ -72,7 +72,7 @@ export default function WordCard() {
           </div>
         </div>
       </div>
-      <div className="absolute top-0 right-0 -translate-y-1/2">
+      <div className="absolute top-[-4px] right-[calc(var(--spacing)*10)] ">
         <Icnbookmark />
       </div>
     </div>
