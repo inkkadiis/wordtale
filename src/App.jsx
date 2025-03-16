@@ -1,10 +1,15 @@
 import "./App.css";
 import WordDef from "./pages/WordDef";
 import AppRoutes from "./routes";
+import Splash from "./components/Splash";
 
 function App() {
   return (
     <>
+      <div className="w-screen flex flex-col justify-center items-center  bg-point">
+        <Splash />
+      </div>
+
       <div className="p-6 md:p-6 lg:p-8 w-screen flex flex-col items-center h-full bg-main gap-6">
         <AppRoutes />
         {/*
