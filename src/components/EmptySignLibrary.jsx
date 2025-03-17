@@ -1,11 +1,9 @@
-import Bookmark from "./Icon";
+import { Bookmark } from "./Icon";
 
 export default function EmptySignLibrary() {
   return (
-    <>
-      <div className="">
-        <Bookmark />
-      </div>
-    </>
+    <div className="">
+      <Bookmark />
+    </div>
   );
 }
