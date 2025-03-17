@@ -8,7 +8,8 @@ import Splash from "../pages/Splash";
 import WorkThFirst from "../pages/WorkThFirst";
 import WorkThSecond from "../pages/WorkThSecond";
 import SignUpFirst from "../pages/SignUpFirst";
-import SignIn from "../pages/signup&signin/SignIn";
+import SignIn from "../pages/SignIn";
+import SignInFinal from "../pages/SignInFinal";
 
 const AppRoutes = () => (
   <BrowserRouter>
@@ -20,6 +21,7 @@ const AppRoutes = () => (
       <Route path="/workthsecond" element={<WorkThSecond />} />
       <Route path="/signupfirst" element={<SignUpFirst />} />
       <Route path="/signin" element={<SignIn />} />
+      <Route path="/signinfinal" element={<SignInFinal />} />
     </Routes>
     <Nav />
   </BrowserRouter>
