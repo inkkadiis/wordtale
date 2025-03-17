@@ -7,6 +7,7 @@ import Nav from "../components/Nav";
 import Splash from "../pages/Splash";
 import WorkThFirst from "../pages/WorkThFirst";
 import WorkThSecond from "../pages/WorkThSecond";
+import SignUpFirst from "../pages/SignUpFirst";
 
 const AppRoutes = () => (
   <BrowserRouter>
@@ -16,6 +17,7 @@ const AppRoutes = () => (
       <Route path="/homeEmpty" element={<HomeEmpty />} />
       {/*<Route path="/splash" element={<Splash />} /> */}
       <Route path="/workthsecond" element={<WorkThSecond />} />
+      <Route path="/signupfirst" element={<SignUpFirst />} />
     </Routes>
     {/*<Nav /> */}
   </BrowserRouter>

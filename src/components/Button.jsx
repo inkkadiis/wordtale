@@ -6,7 +6,7 @@ const colors = {
 };
 
 const type = {
-  full: "w-full flex justify-center rounded-[22px] px-8 py-4",
+  full: "w-full max-w-xs flex  justify-center rounded-[17px] px-8 py-3",
   fit: "inline-flex justify-center rounded-[15px] px-6 py-2",
 };
 
