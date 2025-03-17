@@ -16,10 +16,10 @@ export default function Nav() {
   const [searchToggle, setSearchToggle] = useState(false);
 
   return (
-    <div className="flex justify-center">
-      <div className="absolute bottom-[calc(1.25rem+env(safe-area-inset-bottom))] z-50">
+    <div className="flex justify-center ">
+      <div className="flex gap-3 items-center absolute bottom-[calc(1.25rem+env(safe-area-inset-bottom))] z-50">
         <div
-          className="h-14 px-8 py-4 bg-white rounded-full outline -outline-offset-1
+          className="h-12 px-4 py-3 bg-white rounded-full outline -outline-offset-1
        outline-borderColor inline-flex justify-start items-center gap-6 nav-shadow "
         >
           <button
@@ -28,23 +28,34 @@ export default function Nav() {
           >
             <Left size={iconSize} strokeWidth={iconStrokeWidth} />
           </button>
+        </div>
+        <div
+          className="h-14 px-8 py-4 bg-white rounded-full outline -outline-offset-1
+       outline-borderColor inline-flex justify-start items-center gap-6 nav-shadow "
+        >
           <button
             className={getIconClass("/word")}
             onClick={() => navigate("word")}
           >
             <Home size={iconSize} strokeWidth={iconStrokeWidth} />
           </button>
-          <button
-            className={searchToggle ? "text-point" : "text-sub"}
-            onClick={() => setSearchToggle(!searchToggle)}
-          >
-            <Search size={iconSize} strokeWidth={iconStrokeWidth} />
-          </button>
+
           <button
             className={getIconClass("/library")}
             onClick={() => navigate("library")}
           >
             <Book size={iconSize} strokeWidth={iconStrokeWidth} />
+          </button>
+        </div>
+        <div
+          className="h-12 px-4 py-3 bg-white rounded-full outline -outline-offset-1
+       outline-borderColor inline-flex justify-start items-center gap-6 nav-shadow "
+        >
+          <button
+            className={searchToggle ? "text-point" : "text-sub"}
+            onClick={() => setSearchToggle(!searchToggle)}
+          >
+            <Search size={iconSize} strokeWidth={iconStrokeWidth} />
           </button>
         </div>
       </div>
