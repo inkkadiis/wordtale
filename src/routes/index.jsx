@@ -8,7 +8,7 @@ import Splash from "../pages/Splash";
 import WorkThFirst from "../pages/WorkThFirst";
 import WorkThSecond from "../pages/WorkThSecond";
 import SignUpFirst from "../pages/SignUpFirst";
-import SignIn from "../pages/SignIn";
+import SignIn from "../pages/signup&signin/SignIn";
 
 const AppRoutes = () => (
   <BrowserRouter>
