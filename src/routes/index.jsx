@@ -10,6 +10,7 @@ import WorkThSecond from "../pages/WorkThSecond";
 import SignUpFirst from "../pages/SignUpFirst";
 import SignIn from "../pages/SignIn";
 import SignInFinal from "../pages/SignInFinal";
+import EmptySignLibrary from "../components/EmptySignLibrary";
 
 const AppRoutes = () => (
   <BrowserRouter>
@@ -22,6 +23,7 @@ const AppRoutes = () => (
       <Route path="/signupfirst" element={<SignUpFirst />} />
       <Route path="/signin" element={<SignIn />} />
       <Route path="/signinfinal" element={<SignInFinal />} />
+      <Route path="/htest" element={<EmptySignLibrary />} />
     </Routes>
     <Nav />
   </BrowserRouter>
