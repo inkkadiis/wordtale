@@ -2,7 +2,7 @@ import Button from "../components/Button";
 
 export default function WorkThFirst() {
   return (
-    <div className="w-96 h-[932px] flex flex-col  relative bg-main overflow-hidden">
+    <div className="w-full max-x-md h-68p flex flex-col justify-center items-center relative bg-main overflow-hidden">
       {/**  left page
       <div className="w-48 h-80 left-[256.81px] top-[170px] absolute overflow-hidden">
         <div className="w-48 h-80 left-[195.19px] top-[327.53px] absolute origin-top-left rotate-180 bg-white rounded-tl-xl rounded-bl-xl shadow-[0.5109723210334778px_2.554861307144165px_5.620695114135742px_0px_rgba(147,145,133,0.10)] shadow-[2.554861307144165px_9.708473205566406px_10.21944522857666px_0px_rgba(147,145,133,0.09)] shadow-[6.131667613983154px_22.48278045654297px_13.79625129699707px_0px_rgba(147,145,133,0.05)] shadow-[11.241390228271484px_39.855838775634766px_16.35111427307129px_0px_rgba(147,145,133,0.01)] shadow-[17.37306022644043px_61.82765197753906px_17.884033203125px_0px_rgba(147,145,133,0.00)] border-[0.51px] border-[#f4f1eb]" />
@@ -208,28 +208,33 @@ export default function WorkThFirst() {
       </div>*/}
 
       {/* Search ~ a story */}
-      <div className="  text-center justify-center">
-        <span class="text-black text-2xl font-normal font-['Outfit'] leading-loose tracking-wide">
-          Search a word, and let AI
-          <br />
-          craft its{" "}
-        </span>
-        <span class="text-black text-2xl font-bold font-['Outfit'] leading-loose tracking-wide">
-          meaning{" "}
-        </span>
-        <span class="text-black text-2xl font-normal font-['Outfit'] leading-loose tracking-wide">
-          &{" "}
-        </span>
-        <span class="text-black text-2xl font-bold font-['Outfit'] leading-loose tracking-wide">
-          a story
-        </span>
-        <span class="text-black text-2xl font-normal font-['Outfit'] leading-loose tracking-wide">
-          .
-        </span>
+      <div className="size-full max-x-md flex flex-col justify-center items-center gap-9">
+        <div className="  text-center justify-center ">
+          <span class="text-black text-2xl font-normal font-['Outfit'] leading-loose tracking-wide">
+            Search a word, and let AI
+            <br />
+            craft its{" "}
+          </span>
+          <span class="text-black text-2xl font-bold font-['Outfit'] leading-loose tracking-wide">
+            meaning{" "}
+          </span>
+          <span class="text-black text-2xl font-normal font-['Outfit'] leading-loose tracking-wide">
+            &{" "}
+          </span>
+          <span class="text-black text-2xl font-bold font-['Outfit'] leading-loose tracking-wide">
+            a story
+          </span>
+          <span class="text-black text-2xl font-normal font-['Outfit'] leading-loose tracking-wide">
+            .
+          </span>
+        </div>
+        <div className="flex flex-col self-stretch justify-center items-center gap-5">
+          <Button color="point" size="full" className="h1 ">
+            <h1 className="text-xl font-medium">Next</h1>
+          </Button>
+          <h1 className="text-sub font-semibold">Skip</h1>
+        </div>
       </div>
-      <Button color="point" size="full">
-        Next
-      </Button>
     </div>
   );
 }
