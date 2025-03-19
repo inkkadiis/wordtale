@@ -19,7 +19,7 @@ const AppRoutes = () => (
       <Route path="/library" element={<Library />} />
       <Route path="/homeempty" element={<HomeEmpty />} />
       {/*<Route path="/splash" element={<Splash />} /> */}
-      <Route path="/walkthfirst" element={<WalkThFirst />} />
+      <Route path="/walkthfirst" element={<WalkThThird />} />
       <Route path="/signupfirst" element={<SignUpFirst />} />
       <Route path="/signin" element={<SignIn />} />
       <Route path="/signinfinal" element={<SignInFinal />} />
