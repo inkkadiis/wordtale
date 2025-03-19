@@ -1,7 +1,7 @@
 import Button from "../components/Button";
 import BookImage from "../components/BookImage";
 
-export default function SignInFinal() {
+export default function SignUpFinal() {
   return (
     <div className="size-full max-x-md flex flex-col justify-center items-center gap-9">
       <div className="flex flex-col gap-6">

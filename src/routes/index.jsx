@@ -10,7 +10,7 @@ import WalkThSecond from "../pages/WalkThSecond";
 import WalkThThird from "../pages/WalkThThird";
 import SignUpFirst from "../pages/SignUpFirst";
 import SignIn from "../pages/SignIn";
-import SignInFinal from "../pages/SignInFinal";
+import SignUpFinal from "../pages/SignupFinal";
 
 const AppRoutes = () => (
   <BrowserRouter>
@@ -22,7 +22,7 @@ const AppRoutes = () => (
       <Route path="/walkthfirst" element={<WalkThThird />} />
       <Route path="/signupfirst" element={<SignUpFirst />} />
       <Route path="/signin" element={<SignIn />} />
-      <Route path="/signinfinal" element={<SignInFinal />} />
+      <Route path="/signupfinal" element={<SignUpFinal />} />
     </Routes>
     <Nav />
   </BrowserRouter>
