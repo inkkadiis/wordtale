@@ -4,7 +4,7 @@ import BookImage from "../components/BookImage";
 export default function SignInFinal() {
   return (
     <div className="size-full max-x-md flex flex-col justify-center items-center gap-9">
-      <div className="">
+      <div className="flex flex-col gap-6">
         <h1 className=" text-center justify-center text-point text-3xl font-semibold  leading-[38px] tracking-wide">
           You're all set to
           <br />
