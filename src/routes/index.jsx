@@ -5,9 +5,9 @@ import Library from "../pages/Library";
 import HomeEmpty from "../pages/HomeEmpty";
 import Nav from "../components/Nav";
 import Splash from "../pages/Splash";
-import WorkThFirst from "../pages/WorkThFirst";
-import WorkThSecond from "../pages/WorkThSecond";
-import WorkThThird from "../pages/WorkThThird";
+import WalkThFirst from "../pages/WalkThFirst";
+import WalkThSecond from "../pages/WalkThSecond";
+import WalkThThird from "../pages/WalkThThird";
 import SignUpFirst from "../pages/SignUpFirst";
 import SignIn from "../pages/SignIn";
 import SignInFinal from "../pages/SignInFinal";
@@ -19,7 +19,7 @@ const AppRoutes = () => (
       <Route path="/library" element={<Library />} />
       <Route path="/homeempty" element={<HomeEmpty />} />
       {/*<Route path="/splash" element={<Splash />} /> */}
-      <Route path="/workthfirst" element={<WorkThFirst />} />
+      <Route path="/walkthfirst" element={<WalkThFirst />} />
       <Route path="/signupfirst" element={<SignUpFirst />} />
       <Route path="/signin" element={<SignIn />} />
       <Route path="/signinfinal" element={<SignInFinal />} />

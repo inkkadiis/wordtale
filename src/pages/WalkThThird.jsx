@@ -1,8 +1,11 @@
 import Button from "../components/Button";
+import WT_3 from "../assets/WT_3.svg";
 
-export default function WorkThThird() {
+export default function WalkThThird() {
   return (
-    <div className="w-full max-x-md h-68p flex flex-col justify-center items-center relative bg-main overflow-hidden">
+    <div className="size-full flex flex-col justify-center items-center ">
+      <img src={WT_3} alt="WT_3.svg" className="size-full " />
+
       <div className="size-full max-x-md flex flex-col justify-center items-center gap-9">
         <div className="  text-center justify-center ">
           <h1 class="text-black text-2xl font-normal leading-loose tracking-wide">
