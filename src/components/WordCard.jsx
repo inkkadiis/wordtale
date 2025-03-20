@@ -1,4 +1,5 @@
 import Icnbookmark from "./Icnbookmark";
+import IcnbookmarkOff from "./IcnbookmarkOff";
 import WandIcon from "./WandIcon";
 
 export default function WordCard() {
@@ -75,7 +76,7 @@ export default function WordCard() {
         </div>
       </div>
       <div className="absolute top-[-4px] right-[calc(var(--spacing)*10)] ">
-        <Icnbookmark />
+        <IcnbookmarkOff />
       </div>
     </div>
   );
