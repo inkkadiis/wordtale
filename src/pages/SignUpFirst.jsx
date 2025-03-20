@@ -11,13 +11,13 @@ export default function SignUpFirst() {
             WordTale
           </h1>
           <div className="flex text-center justify-center ">
-            <h1 class="text-black text-l font-normal font-['Outfit'] leading-loose tracking-tight ">
+            <h1 class="text-black text-l font-normal font-['Outfit'] leading-loose tracking-normal ">
               Bring words to life
             </h1>
-            <span class="text-[#ff8340] text-l font-normal font-['Outfit'] leading-loose tracking-tight p-[2px]">
+            <span class="text-[#ff8340] text-l font-normal font-['Outfit'] leading-loose tracking-normal p-[2px]">
               {" "}
             </span>
-            <h1 class="bg-gradient-to-r from-[#FF8341] to-[#EA3A9E] bg-clip-text text-transparent text-l  font-semibold  leading-loose tracking-tight">
+            <h1 class="bg-gradient-to-r from-[#FF8341] to-[#EA3A9E] bg-clip-text text-transparent text-l  font-semibold  leading-loose tracking-normal">
               with AI.
             </h1>
           </div>

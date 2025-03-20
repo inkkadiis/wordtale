@@ -9,7 +9,7 @@ export default function WordCard() {
           <div className="w-full flex items-baseline gap-2">
             <h1 className="text-black text-4xl md:text-5xl font-bold">Left</h1>
             <div className="flex flex-col">
-              <div className="text-point text-lg md:text-xl font-medium tracking-tight">
+              <div className="text-point text-lg md:text-xl font-medium tracking-normal">
                 /left/
               </div>
             </div>
