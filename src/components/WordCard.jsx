@@ -16,10 +16,10 @@ export default function WordCard() {
             </div>
           </div>
           <div className="h-full flex-1 overflow-y-auto min-h-0">
-            <div className="h-full overflow-y-auto min-h-0 scroll-fade py-2">
+            <div className="h-full overflow-y-auto min-h-0 scroll-fade scrollbar-no-arrows py-2">
               <div className="flex flex-col gap-10">
                 {/* Definitions (스크롤 적용) */}
-                <div className="flex flex-col gap-8">
+                <div className="flex flex-col gap-8 py-2">
                   {[
                     {
                       number: "1.",

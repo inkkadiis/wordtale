@@ -17,7 +17,7 @@ export default function Nav() {
 
   return (
     <div className="flex justify-center ">
-      <div className="flex gap-3 items-center absolute bottom-[calc(1.25rem+env(safe-area-inset-bottom))] z-50">
+      <div class="flex gap-3 items-center absolute bottom-[calc(3.0rem+env(safe-area-inset-bottom))] )] z-50">
         <div
           className="h-12 px-4 py-3 bg-white rounded-full outline -outline-offset-1
        outline-borderColor inline-flex justify-start items-center gap-6 nav-shadow "

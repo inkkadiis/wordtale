@@ -54,7 +54,7 @@ function WordDef() {
   };
 
   return (
-    <div className="h-80p flex flex-col gap-8 items-stretch min-h-0 overflow-hidden">
+    <div className="h-80p flex flex-col gap-3 items-stretch min-h-0 overflow-hidden">
       <div
         className="flex-1 min-h-0 relative overflow-x-hidden"
         onTouchStart={handleTouchStart}
@@ -65,18 +65,18 @@ function WordDef() {
         onMouseUp={handleMouseUp}
       >
         <div
-          className="h-full flex transition-transform duration-300 min-h-0 p-6 cursor-grab active:cursor-grabbing"
+          className="h-full flex transition-transform duration-300 min-h-0 p-6 cursor-grab active:cursor-grabbing gap-3"
           style={{
             transform: `translateX(-${index * 70}%)`,
           }}
         >
           {/* WordCard (90% visible, 10% WordNovel peeking on the right) */}
-          <div className="min-w-[90%] h-full flex min-h-0 mr-[10%]">
+          <div className="min-w-[88%] h-full flex min-h-0 mr-[10%]">
             <WordCard />
           </div>
 
           {/* WordNovel (90% visible, 10% WordCard peeking on the left) */}
-          <div className="min-w-[90%] h-full flex min-h-0 -ml-[10%]">
+          <div className="min-w-[88%] h-full flex min-h-0 -ml-[10%]">
             <WordNovel />
           </div>
         </div>
@@ -89,7 +89,6 @@ function WordDef() {
 }
 
 export default WordDef;
-
 {
   /**
 function WordDef() {
