@@ -1,10 +1,9 @@
 import SearchBar from "../components/SearchBar";
 import TodayWord from "../components/TodayWord";
 
-
 export default function HomeEmpty() {
   return (
-    <div className="w-full max-w-md mx-auto p-4 md:p-6 lg:p-8 flex flex-col justify-start items-center gap-10">
+    <div className="w-full max-w-md mx-auto px-4 pt-10  flex flex-col gap-4">
       {/* Search Bar */}
       <SearchBar />
 
@@ -22,7 +21,7 @@ export default function HomeEmpty() {
           Review 🔁
         </h1>
         <div className="w-full flex flex-col justify-center items-center gap-4">
-          <div data-svg-wrapper >
+          <div data-svg-wrapper>
             <svg
               width="70"
               height="62"
@@ -30,7 +29,6 @@ export default function HomeEmpty() {
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
               style={{ filter: "drop-shadow(1px 2px 6px rgba(0, 0, 0, 0.25))" }}
-              
             >
               <g opacity="0.5" filter="url(#filter0_d_878_2042)">
                 <path
@@ -55,7 +53,8 @@ export default function HomeEmpty() {
   );
 }
 
-{/**
+{
+  /**
 export default function HomeEmpty() {
   return (
     <div className="w-96 left-[24px] top-[88px] inline-flex flex-col justify-start items-center gap-14">
@@ -139,4 +138,5 @@ export default function HomeEmpty() {
     </div>
   );
 }
- */}
+ */
+}
