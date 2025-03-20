@@ -1,10 +1,10 @@
 export default function WordNovel() {
   return (
     <div className="relative w-full h-full bg-white rounded-tr-3xl rounded-br-3xl pt-2 pr-2 pb-2 shadow-lg clip-container">
-      <div className="w-full h-full flex flex-col justify-center content-center bg-white border-borderColor border-r-4 border-t-4 border-b-4 rounded-tr-3xl rounded-br-3xl p-7">
+      <div className="w-full h-full flex flex-col justify-center  bg-white border-borderColor border-r-4 border-t-4 border-b-4 rounded-tr-3xl rounded-br-3xl p-7">
         <div className="h-[80%] flex flex-col  ">
-          <div className="h-full flex-1 overflow-y-auto min-h-0 scroll-fade pt-3">
-            <div className="flex flex-col gap-5">
+          <div className="h-full flex-1  overflow-y-auto min-h-0 scroll-fade pt-3">
+            <div className="flex flex-col gap-5 justify-center">
               <div className="bg-black rounded-full flex justify-center items-center w-6 h-6">
                 <span className="font-outfit text-white text-xs font-normal">
                   1
