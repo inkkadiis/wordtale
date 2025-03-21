@@ -65,7 +65,7 @@ function WordDef() {
         onMouseUp={handleMouseUp}
       >
         <div
-          className="h-full flex transition-transform duration-300 min-h-0 p-6 cursor-grab active:cursor-grabbing gap-3"
+          className="h-full flex transition-transform duration-300 min-h-0 p-6 cursor-move active:cursor-grabbing gap-3"
           style={{
             transform: `translateX(-${index * 70}%)`,
           }}
